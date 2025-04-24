@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ExpenseCalculator</class>
+ <widget class="QMainWindow" name="ExpenseCalculator">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>500</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Kalkulator Pengeluaran</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLabel" name="labelNama">
+      <property name="styleSheet">
+       <string>font-weight: bold; color: darkblue;</string>
+      </property>
+      <property name="text">
+       <string>Nama: Rafli</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="labelNIM">
+      <property name="text">
+       <string>NIM: F1D022022</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="inputJumlah">
+      <property name="placeholderText">
+       <string>Masukkan jumlah pengeluaran</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QComboBox" name="comboKategori">
+      <item>
+       <property name="text">
+        <string>Makanan</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Transportasi</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Hiburan</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="groupBoxMetode">
+      <property name="title">
+       <string>Metode Pembayaran</string>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QRadioButton" name="radioTunai">
+         <property name="text">
+          <string>Tunai</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="radioEwallet">
+         <property name="text">
+          <string>E-Wallet</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="radioKartu">
+         <property name="text">
+          <string>Kartu</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QSpinBox" name="spinJumlah">
+      <property name="minimum">
+       <number>1</number>
+      </property>
+      <property name="maximum">
+       <number>100</number>
+      </property>
+      <property name="value">
+       <number>1</number>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btnTambah">
+      <property name="styleSheet">
+       <string>background-color: #5cb85c; color: white; font-weight: bold;</string>
+      </property>
+      <property name="text">
+       <string>Tambah Pengeluaran</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QListWidget" name="listPengeluaran"/>
+    </item>
+    <item>
+     <widget class="QLabel" name="labelTotal">
+      <property name="text">
+       <string>Total Pengeluaran: Rp 0</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btnTentang">
+      <property name="text">
+       <string>Tentang Aplikasi</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>500</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <addaction name="menuFile"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="menuFile">
+   <property name="text">
+    <string>File</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
